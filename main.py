@@ -37,12 +37,12 @@ def logintest():
 
     profilepage = driver.find_element(By.XPATH, "/html/body/div/div/div/div[2]/div[2]/div/div[1]/div/div[2]/a/span[2]")
     profilepage.click()
-    print("Переход на страницу Цифровой профиль выполнен")
+    print("Переход на страницу Цифровой профиль выполнен )")
     time.sleep(5)
 
     mainpage = driver.find_element(By.XPATH, "/html/body/div/div/header/div[1]/div[1]/a")
     mainpage.click()
-    print("Переход на главную")
+    print("Переход на главную страницу")
     time.sleep(2)
 
     intersectionpage = driver.find_element(By.XPATH, "/html/body/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/a/span[2]")
