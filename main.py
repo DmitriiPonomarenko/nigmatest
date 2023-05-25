@@ -33,7 +33,7 @@ def logintest():
     login = driver.find_element(By.XPATH, "/html/body/div/div/div[2]/form/div[2]/button[1]")
     login.click()
     time.sleep(1)
-    print("Тест авторизации пройден (Какой то дмитрий комитит падла")
+    print("Тест авторизации пройден (Юзаем десктоп")
 
     profilepage = driver.find_element(By.XPATH, "/html/body/div/div/div/div[2]/div[2]/div/div[1]/div/div[2]/a/span[2]")
     profilepage.click()
