@@ -30,47 +30,54 @@ def logintest():
     time.sleep(1)
     print("Тест авторизации пройден")
 
-    profilepage = driver.find_element(By.XPATH, "/html/body/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/a/span[2]")
-    profilepage.click()
-    print("Переход на страницу Пересечение пользователей")
-    time.sleep(2)
+    # profilepage = driver.find_element(By.XPATH, "/html/body/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/a/span[2]")
+    # profilepage.click()
+    # print("Переход на страницу Пересечение пользователей")
+    # time.sleep(2)
+    #
+    # mainpage = driver.find_element(By.XPATH,"/html/body/div[1]/div/header/div[1]/div[1]/div[1]/a")
+    # mainpage.click()
+    # print("Переход на главную страницу")
+    # time.sleep(2)
+    #
+    # intersectionpage = driver.find_element(By.XPATH,"/html/body/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/a/span[2]")
+    # intersectionpage.click()
+    # print("Переход на страницу пересечений")
+    # time.sleep(5)
+    #
+    # mainpage.click()
+    # print("Переход на главную")
+    # time.sleep(2)
+    #
+    # intersectionpage = driver.find_element(By.XPATH,"/html/body/div/div/div/div[2]/div[2]/div/div[3]/div/div[2]/a/span[2]")
+    # intersectionpage.click()
+    # print("Переход на страницу Сегментации аудитории")
+    # time.sleep(5)
+    #
+    # mainpage.click()
+    # print("Переход на главную")
+    # time.sleep(2)
+    #
+    # intersectionpage = driver.find_element(By.XPATH,"/html/body/div/div/div/div[2]/div[4]/div/div[1]/div/div[2]/a/span[2]")
+    # intersectionpage.click()
+    # print("Переход на страницу Системные пользователи")
+    # time.sleep(5)
+    #
+    # mainpage.click()
+    # print("Переход на главную")
+    # time.sleep(2)
 
-    mainpage = driver.find_element(By.XPATH,"/html/body/div[1]/div/header/div[1]/div[1]/div[1]/a")
-    mainpage.click()
-    print("Переход на главную страницу")
-    time.sleep(2)
-
-    intersectionpage = driver.find_element(By.XPATH,"/html/body/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/a/span[2]")
+def recservicetest():
+    intersectionpage = driver.find_element(By.XPATH, "/html/body/div[1]/div/div/div[2]/div[4]/div/div[8]/div/div[2]/a/span[2]")
     intersectionpage.click()
-    print("Переход на страницу пересечений")
+    print("Переход в рек сервис")
     time.sleep(5)
-
-    mainpage.click()
-    print("Переход на главную")
-    time.sleep(2)
-
-    intersectionpage = driver.find_element(By.XPATH,"/html/body/div/div/div/div[2]/div[2]/div/div[3]/div/div[2]/a/span[2]")
-    intersectionpage.click()
-    print("Переход на страницу Сегментации аудитории")
-    time.sleep(5)
-
-    mainpage.click()
-    print("Переход на главную")
-    time.sleep(2)
-
-    intersectionpage = driver.find_element(By.XPATH,"/html/body/div/div/div/div[2]/div[4]/div/div[1]/div/div[2]/a/span[2]")
-    intersectionpage.click()
-    print("Переход на страницу Системные пользователи")
-    time.sleep(5)
-
-    mainpage.click()
-    print("Переход на главную")
-    time.sleep(2)
 
 
 
 if __name__ == '__main__':
     logintest()
+    recservicetest()
 
 
 
